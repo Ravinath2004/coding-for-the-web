@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canterbury College - Coding for the Web</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: url('Background.png') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .cta-button {
+            background-color: #10B981;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .secondary-button {
+            background-color: #0F172A;
+            transition: all 0.3s ease;
+        }
+
+        .secondary-button:hover {
+            background-color: #1E293B;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link:hover {
+            color: #10B981;
+        }
+
+        .footer-link:hover {
+            color: #10B981;
+        }
+
+        .social-icon:hover {
+            color: #10B981;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header Section -->
+    <header class="py-6 px-4 sm:px-8 lg:px-16 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <img src="LOGO.png" alt="Canterbury College Logo" class="h-12 w-12 object-contain" />
+            <a href="https://www.canterburycollege.ac.uk/" class="text-xl font-bold hover:text-green-400 transition">Canterbury College</a>
+        </div>
+
+        <nav class="hidden md:flex space-x-8">
+            <a href="CanWeb.html" class="nav-link text-white hover:text-green-400 transition">Home</a>
+            <a href="Exercises Page.html" class="nav-link text-white hover:text-green-400 transition">Tutorials</a>
+            <a href="Contact Us.html" class="nav-link text-white hover:text-green-400 transition">Contact Us</a>
+        </nav>
+
+        <button class="md:hidden text-white">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="flex-grow flex flex-col items-center justify-center px-4 sm:px-8 py-12 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">Welcome to Coding for the Web</h1>
+            <p class="text-lg sm:text-xl text-gray-300 mb-10">
+                Learn how to build websites and web applications using Python. Start your coding journey with our hands-on tutorials and exercises.
+            </p>
+
+            <a href="Get Started With Python.html" class="cta-button inline-block px-8 py-4 rounded-lg text-white font-semibold text-lg mb-16">
+                Get Started with Python
+            </a>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-8">
+                <a href="Learn Python.html" class="secondary-button px-6 py-4 rounded-lg text-white font-medium flex items-center justify-center">
+                    <i class="fas fa-code mr-3"></i> Learn Python
+                </a>
+                <a href="Resources page.html" class="secondary-button px-6 py-4 rounded-lg text-white font-medium flex items-center justify-center">
+                    <i class="fas fa-book mr-3"></i> Resources
+                </a>
+                <a href="Exercises Page.html" class="secondary-button px-6 py-4 rounded-lg text-white font-medium flex items-center justify-center">
+                    <i class="fas fa-laptop-code mr-3"></i> Practice Exercises
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="py-8 px-4 sm:px-8 lg:px-16 bg-gray-900">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <a href="https://www.canterburycollege.ac.uk/" class="text-lg hover:text-green-400 transition">Canterbury College</a>
+            </div>
+            <div class="mb-4 md:mb-0">
+                <a href="Privacy Policy.html" class="footer-link text-gray-300 hover:text-green-400 transition">Privacy Policy</a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="Contact Us.html" class="footer-link text-gray-300 hover:text-green-400 transition">Contact Us</a>
+                <a href="https://www.instagram.com/ekc_canterburycollege/?igsh=MWV3ZHF6ZTBkZDMyaA%3D%3D#" class="social-icon text-gray-300 hover:text-green-400 transition">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="https://x.com/canterburycoll" class="social-icon text-gray-300 hover:text-green-400 transition">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
