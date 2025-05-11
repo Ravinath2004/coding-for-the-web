@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Canterbury College</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            background: url('Background.png') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .cta-button {
+            background-color: #10B981;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link:hover {
+            color: #10B981;
+        }
+
+        .footer-link:hover {
+            color: #10B981;
+        }
+
+        .social-icon:hover {
+            color: #10B981;
+            transform: scale(1.1);
+        }
+
+        .fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="py-6 px-4 sm:px-8 lg:px-16 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <img src="LOGO.png" alt="Canterbury College Logo" class="h-12 w-12 object-contain" />
+            <a href="https://www.canterburycollege.ac.uk/" class="text-xl font-bold hover:text-green-400 transition">Canterbury College</a>
+        </div>
+
+        <nav class="hidden md:flex space-x-8">
+            <a href="CanWeb.html" class="nav-link text-white hover:text-green-400 transition">Home</a>
+            <a href="Exercises Page.html" class="nav-link text-white hover:text-green-400 transition">Tutorials</a>
+            <a href="Contact Us.html" class="nav-link text-white hover:text-green-400 transition">Contact Us</a>
+        </nav>
+
+        <button class="md:hidden text-white">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center px-4 py-12">
+        <div class="bg-gray-900 bg-opacity-80 rounded-xl p-10 w-full max-w-2xl shadow-lg">
+            <h2 class="text-3xl font-bold mb-6 text-center">Privacy Policy</h2>
+            <p class="text-gray-300 mb-4">
+                At Canterbury College, we take your privacy seriously. This site does not collect any personal data without your consent.
+                All user information submitted through forms is used solely for academic and support purposes.
+            </p>
+            <p class="text-gray-300 mb-4">
+                Our goal is to provide a secure, supportive environment for students to explore web development using Python.
+                We do not share your data with any third parties.
+            </p>
+            <p class="text-gray-300 mb-4">
+                This platform is built to help students learn web coding with Python from beginner level. With hands-on tutorials, resources,
+                and exercises, we aim to support your journey into the tech world with clarity and confidence.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-4 sm:px-8 lg:px-16 bg-gray-900">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <a href="https://www.canterburycollege.ac.uk/" class="text-lg hover:text-green-400 transition">Canterbury College</a>
+            </div>
+            <div class="mb-4 md:mb-0">
+                <a href="#" class="footer-link text-gray-300 hover:text-green-400 transition">Privacy Policy</a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="Contact Us.html" class="footer-link text-gray-300 hover:text-green-400 transition">Contact Us</a>
+                <a href="https://www.instagram.com/ekc_canterburycollege/?igsh=MWV3ZHF6ZTBkZDMyaA%3D%3D#" class="social-icon text-gray-300 hover:text-green-400 transition">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="https://x.com/canterburycoll" class="social-icon text-gray-300 hover:text-green-400 transition">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>
