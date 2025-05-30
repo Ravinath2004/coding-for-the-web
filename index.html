@@ -16,10 +16,14 @@
             min-height: 100vh;
             color: white;
             opacity: 0;
-            transition: opacity 0.8s ease-in;
+            transition: opacity 0.8s ease-in, background-color 0.5s, color 0.5s;
         }
         body.loaded {
             opacity: 1;
+        }
+        .dark-mode {
+            background: #111 !important;
+            color: #f0f0f0 !important;
         }
 
         .cta-button {
@@ -99,6 +103,11 @@
                 </button>
             </div>
 
+            <!-- Dark Mode Toggle Button -->
+            <button onclick="toggleDarkMode()" class="ml-4 text-white bg-gray-700 px-4 py-2 rounded-full hover:bg-gray-600 transition">
+                Toggle Mode
+            </button>
+
             <button id="menu-toggle" class="md:hidden text-white">
                 <i class="fas fa-bars text-2xl"></i>
             </button>
@@ -157,33 +166,25 @@
 
     <!-- Client-Side Scripts -->
     <script>
-        // 1. Fade-In Effect on Page Load
         document.addEventListener('DOMContentLoaded', function() {
             document.body.classList.add('loaded');
         });
 
-        // 2. Mobile Navigation Toggle
         const menuToggle = document.getElementById('menu-toggle');
         const navList = document.querySelector('nav ul');
         menuToggle.addEventListener('click', function() {
             navList.classList.toggle('nav-open');
         });
 
-        // 3. Back to Top Button
         const backToTop = document.getElementById('back-to-top');
         window.addEventListener('scroll', function() {
-            if (window.scrollY > 200) {
-                backToTop.style.display = 'block';
-            } else {
-                backToTop.style.display = 'none';
-            }
+            backToTop.style.display = window.scrollY > 200 ? 'block' : 'none';
         });
         backToTop.addEventListener('click', function(e) {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // 4. Highlight Active Navigation Item
         const links = document.querySelectorAll('nav a');
         const currentUrl = window.location.href;
         links.forEach(link => {
@@ -192,7 +193,6 @@
             }
         });
 
-        // 5. Search Function
         function performSearch() {
             const input = document.getElementById('searchInput').value.toLowerCase();
             if (input.includes('tutorials')) {
@@ -206,6 +206,10 @@
             } else {
                 alert('No results found. Please try another keyword.');
             }
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
         }
     </script>
 </body>
